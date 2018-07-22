@@ -1,13 +1,13 @@
 import xs from 'xstream'
-import {Stream} from 'xstream'
-import {DOMSource, VNode} from '@cycle/dom'
+import { Stream } from 'xstream'
+import { DOMSource, VNode } from '@cycle/dom'
 
 export type Sources = {
-  DOM : DOMSource;
+  DOM: DOMSource;
 }
 
 export type Sinks = {
-  DOM : Stream<VNode>;
+  DOM: Stream<VNode>;
 }
 
-export type Component = (s : Sources) => Sinks;
+export type Component = (s: Sources) => Sinks;
